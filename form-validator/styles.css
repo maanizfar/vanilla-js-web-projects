@@ -56,3 +56,14 @@ button {
   font-size: 1.1rem;
   cursor: pointer;
 }
+
+.form-control.error > input {
+  border: 2px solid red;
+}
+.form-control.error > small {
+  color: red;
+}
+
+.form-control.success > input {
+  border: 2px solid lightgreen;
+}
