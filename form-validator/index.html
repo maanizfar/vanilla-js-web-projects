@@ -12,17 +12,24 @@
         <h2>Sign Up Now</h2>
         <div class="form-control">
           <label for="username">Username</label>
-          <input type="text" name="username" id="username" />
+          <input type="text" name="username" id="username" required />
           <small class="error"></small>
         </div>
         <div class="form-control">
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" required />
           <small class="error"></small>
         </div>
         <div class="form-control">
           <label for="password">Password</label>
-          <input type="password" name="password" id="password" />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            minlength="8"
+            maxlength="16"
+            required
+          />
           <small class="error"></small>
         </div>
         <div class="form-control">
@@ -31,6 +38,9 @@
             type="password"
             name="confirm-password"
             id="confirm-password"
+            minlength="8"
+            maxlength="16"
+            required
           />
           <small class="error"></small>
         </div>
